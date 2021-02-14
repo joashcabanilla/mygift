@@ -14,6 +14,9 @@ body {
 .main-div {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .picture {
   position: absolute;
@@ -75,13 +78,21 @@ body {
   height: 110px;
   animation-delay: 3.5s;
 }
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
   }
-  100%{
+  100% {
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
   }
+}
+.member1 {
+  background-image: url("../src/image/member1.jpg");
+  width: 80px;
+  height: 300px;
+  background-size: 80px 300px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
