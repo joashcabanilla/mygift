@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .picture {
   position: absolute;
@@ -88,11 +90,198 @@ body {
     opacity: 0;
   }
 }
-.member1 {
-  background-image: url("../src/image/member1.jpg");
+.member1,
+.member2,
+.member3,
+.member4,
+.member5,
+.member6,
+.member7,
+.member8,
+.member9,
+.member10,
+.member11,
+.member12,
+.member13 {
   width: 80px;
-  height: 300px;
-  background-size: 80px 300px;
+  height: 200px;
+  background-size: 80px 200px;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 1;
+  margin-right: 5px;
+}
+.member1 {
+  background-image: url("../src/image/member1.jpg");
+}
+.member2 {
+  background-image: url("../src/image/member2.jpg");
+}
+.member3 {
+  background-image: url("../src/image/member3.jpg");
+}
+.member4 {
+  background-image: url("../src/image/member4.jpg");
+}
+.member5 {
+  background-image: url("../src/image/member5.png");
+}
+.member6 {
+  background-image: url("../src/image/member6.png");
+}
+.member7 {
+  background-image: url("../src/image/member7.jpg");
+}
+.member8 {
+  background-image: url("../src/image/member8.jpg");
+}
+.member9 {
+  background-image: url("../src/image/member9.jpg");
+}
+.member10 {
+  background-image: url("../src/image/member10.png");
+}
+.member11 {
+  background-image: url("../src/image/member11.jpg");
+}
+.member12 {
+  background-image: url("../src/image/member12.jpg");
+}
+.member13 {
+  background-image: url("../src/image/member13.jpg");
+}
+.letter_pictures {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: rows;
+}
+.H,
+.A,
+.P,
+.P2,
+.Y,
+.B,
+.I,
+.R,
+.T,
+.H2,
+.D,
+.A2,
+.Y2 {
+  animation: letter_h 5s linear;
+  animation-duration: 3s;
+  width: 80px;
+  background-color: #554c8d;
+  animation-fill-mode: forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0px;
+}
+@keyframes letter_h {
+  0% {
+    height: 0px;
+    visibility: hidden;
+  }
+  100% {
+    height: 200px;
+    background-color: #554c8d;
+  }
+}
+.h,
+.a,
+.p,
+.p2,
+.y,
+.b,
+.i,
+.r,
+.t,
+.h2,
+.d,
+.a2,
+.y2 {
+  font-family: "Anton", sans-serif;
+  color: azure;
+  animation: h 5s linear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes h {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 100px;
+    opacity: 1;
+  }
+}
+.H,
+.h {
+  animation-delay: 3s;
+}
+.A,
+.a {
+  animation-delay: 6s;
+}
+.P,
+.p {
+  animation-delay: 9s;
+}
+.P2,
+.p2 {
+  animation-delay: 12s;
+}
+.Y,
+.y {
+  animation-delay: 15s;
+}
+.B,
+.b {
+  animation-delay: 18s;
+}
+.I,
+.i {
+  animation-delay: 21s;
+}
+.R,
+.r {
+  animation-delay: 24s;
+}
+.T,
+.t {
+  animation-delay: 27s;
+}
+.H2,
+.h2 {
+  animation-delay: 30s;
+}
+.D,
+.d {
+  animation-delay: 33s;
+}
+.A2,
+.a2 {
+  animation-delay: 36s;
+}
+.Y2,
+.y2 {
+  animation-delay: 39s;
+}
+.letter_pictures {
+  margin-bottom: 150px;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+.name1,
+.name2,
+.name3 {
+  margin-right: 20px;
 }
