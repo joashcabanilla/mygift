@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -271,7 +272,7 @@ body {
   animation-delay: 39s;
 }
 .letter_pictures {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .name {
   display: flex;
@@ -284,4 +285,73 @@ body {
 .name2,
 .name3 {
   margin-right: 20px;
+  font-family: "Lobster", cursive;
+  animation: name 10s linear;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  color: rgb(242, 71, 71);
+  font-size: 0px;
+}
+@keyframes name {
+  0% {
+    opacity: 0;
+    transform: scale(5);
+    font-size: 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    font-size: 100px;
+  }
+}
+.name1 {
+  animation-delay: 42s;
+}
+.name2 {
+  animation-delay: 45s;
+}
+.name3 {
+  animation-delay: 48s;
+}
+.open-button {
+  z-index: 1;
+  animation: open 5s linear;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-delay: 52s;
+  opacity: 0;
+  margin-top: 20px;
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 44px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+  outline: none;
+}
+open-button:hover {
+  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color: #378de5;
+}
+.open-button:active {
+  position: relative;
+  top: 1px;
+}
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 150px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }

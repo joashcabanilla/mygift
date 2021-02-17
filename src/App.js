@@ -1,6 +1,8 @@
 import React from 'react';
 import {useSpring, animated} from 'react-spring';
 import './App.css';
+import {BrowserRouter as Router,Switch, Route,Link} from 'react-router-dom';
+import Card from './card.js';
 
 function App(){
     const members = ["member1","member2","member3","member4","member5","member6","member7","member8","member9","member10","member11","member12","member13"];
@@ -15,8 +17,8 @@ function App(){
         reset: true,
 });
 
-    return(
-        <div className="main-div">
+const home = () => {
+    return(<div className="main-div">
             <div className="letter_pictures">            
             <animated.div className={members[0]} style={{transform: radians.interpolate(interp(1))}}>
                 <div className="H">
@@ -115,6 +117,9 @@ function App(){
                 <p className="name2">Luisa</p>
                 <p className="name3">Papilirin</p>
             </div>
+            <Link className="open-button" to ="/cards">
+                CLICK TO OPEN GIFT
+            </Link>
             <div className="picture">
                 <img className="pic1" src="seventeen_logo.png"/>
                 <img className="pic2" src="seventeen_logo.png"/>
@@ -123,7 +128,16 @@ function App(){
                 <img className="pic5" src="seventeen_logo.png"/>
                 <img className="pic6" src="seventeen_logo.png"/>
             </div>
-        </div>
+        </div>);}
+    return(
+        <Router>
+        <Switch>
+        <Route path="/" exact component={home}>
+            
+        </Route>
+        <Route  path="/cards" component ={Card}/>
+        </Switch>
+        </Router>
     );
 }   
 export default App;
