@@ -133,7 +133,6 @@ const home = () => {
         <Router>
         <Switch>
         <Route path="/" exact component={home}>
-            
         </Route>
         <Route  path="/cards" component ={Card}/>
         </Switch>

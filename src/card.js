@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import './App.css';
+import {useSprings, animated, interpolate} from 'react-spring';
+import { useGesture } from 'react-use-gesture';
 
 function card(){
-
     return(
         <div className="main-div">
             <div className="picture">
@@ -14,7 +15,6 @@ function card(){
                 <img className="pic6" src="seventeen_logo.png"/>
             </div>
         </div>
-        
     );
 }
 
