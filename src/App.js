@@ -2,7 +2,7 @@ import React from 'react';
 import {useSpring, animated} from 'react-spring';
 import './App.css';
 import {BrowserRouter as Router,Switch, Route,Link} from 'react-router-dom';
-import Card from './card.js';
+import Cards from './Cards.js';
 
 function App(){
     const members = ["member1","member2","member3","member4","member5","member6","member7","member8","member9","member10","member11","member12","member13"];
@@ -134,7 +134,7 @@ const home = () => {
         <Switch>
         <Route path="/" exact component={home}>
         </Route>
-        <Route  path="/cards" component ={Card}/>
+        <Route  path="/cards" component ={Cards}/>
         </Switch>
         </Router>
     );

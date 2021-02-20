@@ -1,11 +1,16 @@
-import React,{ useState } from 'react';
 import './App.css';
-import {useSprings, animated, interpolate} from 'react-spring';
-import { useGesture } from 'react-use-gesture';
-
-function card(){
+import Card1 from './components/Card1.js';
+import Card2 from './components/Card2.js';
+import Card3 from './components/Card3.js';
+function Cards(){
     return(
         <div className="main-div">
+            <div className="all_card">
+            <Card1 />
+            <Card2 />
+            <Card3 />
+            </div>
+            
             <div className="picture">
                 <img className="pic1" src="seventeen_logo.png"/>
                 <img className="pic2" src="seventeen_logo.png"/>
@@ -17,5 +22,4 @@ function card(){
         </div>
     );
 }
-
-export default card;
+export default Cards;
