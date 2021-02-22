@@ -23,12 +23,17 @@ return(
             onClick = {() =>  set1(state => !state)}
             style={{ transform: props.xys.interpolate(trans) }}>
                 <animated.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
-
-                    </animated.div>
+                    <div className="card1-back">
+                        <h1 className="text-card1">
+                            1
+                        </h1>
+                    </div>
+                </animated.div>
                 <animated.div className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateY(180deg)`) }}>
-
-                    </animated.div>
-            </animated.div>
+                    <div className="card1-back">
+                    </div>
+                </animated.div>
+</animated.div>
 );
 }
 
